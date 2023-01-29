@@ -1,6 +1,6 @@
 const MyForm = ({ listTransactions, setListTransactions }) => {
     return (
-        <div className="form">
+        <form className="form">
             <div className="inputDescription">
                 <label>
                     Descrição
@@ -26,7 +26,7 @@ const MyForm = ({ listTransactions, setListTransactions }) => {
                 </div>
             </div>
             <button type="submit">Inserir Valor</button>
-        </div>
+        </form>
     )
 }
 
