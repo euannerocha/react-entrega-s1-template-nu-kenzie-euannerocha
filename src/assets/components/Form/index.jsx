@@ -1,6 +1,13 @@
-const MyForm = ({ listTransactions, setListTransactions }) => {
+// const MyForm = ({ listTransactions, setListTransactions }) => {
+
+export function FormCard(){
+
+    function handleSubmit(event){
+        event.preventDefault()
+    }
+
     return (
-        <form className="form">
+        <form className="form" onSubmit={handleSubmit}>
             <div className="inputDescription">
                 <label>
                     Descrição
@@ -29,5 +36,7 @@ const MyForm = ({ listTransactions, setListTransactions }) => {
         </form>
     )
 }
+
+// }
 
 export default MyForm;
