@@ -4,10 +4,7 @@ import MyList from "./assets/components/List/index"
 import MyCard from "./assets/components/Card/index"
 
 function App() {
-  const [listTransactions, setListTransactions] = useState([
-    { description: "Salário recebido", type: "entrada", value: 2500 },
-    { description: "Conta de luz", type: "saída", value: -150 }
-])
+  const [listTransactions, setListTransactions] = useState([])
 
   return (
     <div className="App">
