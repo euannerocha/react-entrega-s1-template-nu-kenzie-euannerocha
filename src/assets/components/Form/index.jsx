@@ -1,21 +1,23 @@
-// const MyForm = ({ listTransactions, setListTransactions }) => {
+import { useState } from "react";
 
 export function FormCard(){
 
     function handleSubmit(event){
         event.preventDefault()
+
+        const [listTransactions, setListTransactions] = useState([])
     }
 
     return (
         <form className="form" onSubmit={handleSubmit}>
-            <div className="inputDescription">
+            <fieldset className="inputDescription">
                 <label>
                     Descrição
                     <input type="text" />
                 </label>
                 <p>Ex.: Compra de roupas</p>
-            </div>
-            <div className="valueAndSelect">
+            </fieldset>
+            <fieldset className="valueAndSelect">
                 <div className="inputValue">
                     <label>
                         Valor
@@ -31,12 +33,10 @@ export function FormCard(){
                         </select>
                     </label>
                 </div>
-            </div>
+            </fieldset>
             <button type="submit">Inserir Valor</button>
         </form>
     )
 }
 
-// }
-
-export default MyForm;
+export default FormCard;
