@@ -1,11 +1,12 @@
 import { useState } from "react";
+import Card from "../Card";
+import MyList from "../List";
 
-export function FormCard(){
+export function FormCard({addTransactionsToList}) {
 
-    function handleSubmit(event){
+    function handleSubmit(event) {
         event.preventDefault()
-
-        const [listTransactions, setListTransactions] = useState([])
+        console.log('Cliquei')
     }
 
     return (
