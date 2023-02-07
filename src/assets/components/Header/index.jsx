@@ -1,8 +1,12 @@
-export function Header(){
-    return(
+import './index.css'
+
+export function Header() {
+    return (
         <header>
-            <h1 className="titleNu">Nu</h1>
-            <h1 className="titleKenzie">Kenzie</h1>
+            <div>
+                <h1 className="titleNu">Nu</h1>
+                <h1 className="titleKenzie">Kenzie</h1>
+            </div>
             <button>Início</button>
         </header>
     )
