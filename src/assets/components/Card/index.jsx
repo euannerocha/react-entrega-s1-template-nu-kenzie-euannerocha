@@ -1,4 +1,4 @@
-const MyCard = ({ titleTransaction, valueTransaction, typeTransaction }) => {
+const Card = ({ titleTransaction, valueTransaction, typeTransaction }) => {
     return (
         <div className="divUser">
             <div className="divTitleAndValue">
@@ -12,4 +12,4 @@ const MyCard = ({ titleTransaction, valueTransaction, typeTransaction }) => {
     )
 }
 
-export default MyCard;
+export default Card;
