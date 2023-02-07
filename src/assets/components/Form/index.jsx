@@ -1,8 +1,14 @@
 // const MyForm = ({ listTransactions, setListTransactions }) => {
 
-export function FormCard(){
+export function FormCard() {
 
-    function handleSubmit(event){
+    const [formData, setFormData] = useState({
+        description: "",
+        value: "",
+        type: "entrada"
+    })
+
+    function handleSubmit(event) {
         event.preventDefault()
     }
 
