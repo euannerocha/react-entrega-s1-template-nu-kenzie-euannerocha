@@ -1,17 +1,11 @@
 body{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0px;
     font-family: 'Nunito', sans-serif; 
-    margin-left: 20px;
 }
 
 .coverHomePage{
     width: 100vw;
     height: 100vh;
-    margin-left: -40px;
-    margin-top: -20px;
     background-color: #212529;
 }
 
@@ -30,6 +24,12 @@ body{
 .titleHomePageKenzie{
     font-size: 18px;
     color: white;
+}
+
+.divImageHomePage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .imgHomePage{
     margin-top: 20px;
@@ -68,4 +68,29 @@ body{
     font-size: 14px;
     margin-left: 20px;
 
+}
+
+@media (min-width: 768px){
+     .coverHomePage{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+     }
+     .descriptionTextButton{
+        display: flex;
+        flex-direction: column;
+     }
+     .imgHomePage{
+        width: 400px;
+        height: 400px;
+        margin-top: 0px;
+     }
+     .containerMainPage{
+        width: 40%;
+     }
+     .titleHomePage{
+        margin-top: 0px;
+     }
+     
 }

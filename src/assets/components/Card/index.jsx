@@ -1,4 +1,6 @@
 import './card.css'
+import imageTrash from "../../../images/ButtonTrash.png"
+
 
 const Card = ({ transaction, removeTransaction }) => {
 
@@ -11,7 +13,7 @@ const Card = ({ transaction, removeTransaction }) => {
             <div className="divTypeCard">
                 <p className="typeCard">{transaction.type}</p>
             </div>
-            <button className='buttonCard' onClick={() => removeTransaction(transaction.id)}> <img src="./src/images/ButtonTrash.png"/> </button>
+            <button className='buttonCard' onClick={() => removeTransaction(transaction.id)}> <img src={imageTrash}/> </button>
         </div>
     )
 }

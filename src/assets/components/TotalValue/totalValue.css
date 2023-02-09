@@ -27,3 +27,9 @@
 .text{
     font-size: 14px;
 }
+
+@media (min-width: 768px){
+    .divTotalValue{
+        max-width: 40vw;
+    }
+}

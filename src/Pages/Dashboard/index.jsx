@@ -32,12 +32,16 @@ function Dashboard({ setPage }) {
 
 
   return (
-      <div className="App">
-        <Header setPage={setPage}/>
+    <div className="dashboardPage">
+      <Header setPage={setPage} />
+      <div className="formTotalListCard">
         <FormCard addTransaction={addTransaction} />
-        <Total value={total} />
-        <MyList listTransactions={transactionList} removeTransaction={removeTransaction} />
+        <div className="totalAndList">
+          <Total value={total} />
+          <MyList listTransactions={transactionList} removeTransaction={removeTransaction} />
+        </div>
       </div>
+    </div>
   )
 }
 
