@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif; 
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px; 
+}
+
+.form{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #E9ECEF;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.inputDescription{
+    border: none;
+}
+
+.inputDescription>label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.inputDescription>p{
+    color: #868E96;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+.inputDescription>label>input{
+    width: 95%;
+    height: 40px;
+    background-color: #ededed;
+    color: #343A40;
+    border: none;
+    border-radius: 8px;
+    padding-inline-start: 15px;
+    font-family: 'Nunito', sans-serif; 
+}
+
+.valueAndSelect{
+    border: none;
+    display: flex;
+    gap: 20px;
+}
+
+.inputValue>label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.inputValue>label>input{
+    width: 90px;
+    height: 38px;
+    background-color: #ededed;
+    color: #343A40;
+    border: none;
+    border-radius: 8px;
+    padding-inline-start: 15px;
+    font-family: 'Nunito', sans-serif; 
+}
+
+.selectEntranceAndExit>label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.selectEntranceAndExit>label>select{
+    width: 110px;
+    height: 38px;
+    background-color: #ededed;
+    color: #343A40;
+    border: none;
+    border-radius: 8px;
+    padding-inline-start: 15px;
+    font-family: 'Nunito', sans-serif; 
+}
+
+.form>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-top: 19px;
+    width: 95%;
+    background-color: #FD377E;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Nunito', sans-serif; 
+    font-size: 14px;
+}
+

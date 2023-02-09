@@ -1,0 +1,41 @@
+.typeCardEntrance {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 156px;
+    border: none;
+    border-left: 4px solid #03B898;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #F8F9FA;
+}
+
+.typeCardExit {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 156px;
+    border: none;
+    border-left: 4px solid #E9ECEF;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #F8F9FA;
+}
+
+.titleCard {
+    font-size: 18px;
+}
+
+.typeCard {
+    margin-top: 2px;
+}
+
+.buttonCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border: none;
+    border-radius: 4px;
+}

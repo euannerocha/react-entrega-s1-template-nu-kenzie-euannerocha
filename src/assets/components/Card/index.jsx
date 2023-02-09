@@ -1,15 +1,17 @@
+import './card.css'
+
 const Card = ({ transaction, removeTransaction }) => {
 
     return (
-        <div className="divUser">
-            <div className="divTitleAndValue">
-                <h1 className="title">{transaction.description}</h1>
-                <p className="value">{transaction.value}</p>
+        <div className={transaction.type === "Entrada" ? "typeCardEntrance" : "typeCardExit"}>
+            <div className="divTitleAndValueCard">
+                <h1 className="titleCard">{transaction.description}</h1>
+                <p className="valueCard">{`R$ ${transaction.value}`}</p>
             </div>
-            <div className="divType">
-                <p className="type">{transaction.type}</p>
+            <div className="divTypeCard">
+                <p className="typeCard">{transaction.type}</p>
             </div>
-            <button onClick={() => removeTransaction(transaction.id)}>Remover</button>
+            <button className='buttonCard' onClick={() => removeTransaction(transaction.id)}> <img src="./src/images/ButtonTrash.png"/> </button>
         </div>
     )
 }

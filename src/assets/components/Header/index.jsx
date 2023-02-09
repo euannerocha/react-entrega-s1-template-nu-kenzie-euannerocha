@@ -1,13 +1,13 @@
-import './index.css'
+import './header.css'
 
-export function Header() {
+export function Header({ setPage }) {
     return (
         <header>
             <div>
                 <h1 className="titleNu">Nu</h1>
                 <h1 className="titleKenzie">Kenzie</h1>
             </div>
-            <button>Início</button>
+            <button onClick={() => setPage('homePage')}>Início</button>
         </header>
     )
 }

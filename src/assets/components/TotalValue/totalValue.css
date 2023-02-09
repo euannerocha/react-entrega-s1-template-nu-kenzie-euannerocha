@@ -1,0 +1,29 @@
+.divTotalValue{
+    width: 80vw;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #E9ECEF;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.titleAndValue{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.title{
+    font-size: 18px;
+}
+
+.value{
+    font-size: 18px;
+    color: #FD377E;
+    font-weight: 800;
+}
+
+.text{
+    font-size: 14px;
+}
